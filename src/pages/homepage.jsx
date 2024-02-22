@@ -1,3 +1,4 @@
+import { useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 
 
@@ -5,48 +6,9 @@ function Homepage({ TasksValue }) {
 
     return(
         <main className='main'>
-            
-    <header>
-        <h1>Mesa Pioneer Construction</h1>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a> |
-        <a href="#services">Services</a> |
-        <a href="#portfolio">Portfolio</a> |
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="home">
-        <h2>Welcome to Our Construction Company</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac suscipit libero.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Construction Planning</li>
-            <li>Building Design</li>
-            <li>Project Management</li>
-        </ul>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@constructioncompany.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </section>
-
-    <footer>
-        &copy; 2024 Construction Company
-    </footer>
-                <h1>Bridge CRM</h1>
-                <h3>The working person's Customer Relationship Management tool</h3>
-            <div className='homepageLayout'>
+                <h1>Mesa Pioneer Construction</h1>
+                <h3>Your Friend in the Constuction Business</h3>
+            {/* <div className='homepageLayout'>
                 <div className='leftColumn'>
                         <img className="frontPics" src="badbusiness.png"/>
                     <p className="LCText">
@@ -68,7 +30,7 @@ function Homepage({ TasksValue }) {
                 <section className="contentSection">
                 {TasksValue ? <Tasks/> : null}
                 </section>
-            </div>
+            </div> */}
         </main>
     );
 };

@@ -14,7 +14,23 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Homepage />,
-      },
+      }
+      // {
+      //   path: '/login',
+      //   element: <Login />
+      // }, {
+      //   path: '/signup',
+      //   element: <Signup />
+      // }, {
+      //   path: '/services',
+      //   element: <ServicesPage />
+      // }, {
+      //   path: '/portfolio',
+      //   element: <PortfolioPage />
+      // }, {
+      //   path: '/contact',
+      //   element: <Contact />
+      // }
     ],
   },
 ]);

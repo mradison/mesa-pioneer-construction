@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import MPCLogo from './assets/MPC.png'
+// import { useState } from 'react'
+// import MPCLogo from './assets/MPC.png'
 // import viteLogo from '/vite.svg'
+
+import { Outlet } from "react-router-dom";
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// import {
+//   ApolloClient,
+//   InMemoryCache,
+//   ApolloProvider,
+//   createHttpLink,
+// } from "@apollo/client";
 
+// import { setContext } from "@apollo/client/link/context";
+
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+// const httpLink = createHttpLink({
+//   uri: "/graphql",
+// });
+
+// const authLink = setContext((_, { headers }) => {
+//   // get the authentication token from local storage if it exists
+//   const token = localStorage.getItem("id_token");
+//   // return the headers to the context so httpLink can read them
+//   return {
+//     headers: {
+//       ...headers,
+//       authorization: token ? `Bearer ${token}` : "",
+//     },
+//   };
+// });
+
+// const client = new ApolloClient({
+//   // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
+//   // link: authLink.concat(httpLink),
+//   // cache: new InMemoryCache(),
+// });
+
+function App() {
   return (
-    <>
-      <div>
-        {/* <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a> */}
-        <a href="" target="_blank">
-          <img src={MPCLogo} className="logo MPC" alt="MPC logo" />
-        </a>
+    // <ApolloProvider client={client}>
+      <div className="App">
+        <Header />
+        <Navbar />
+          <Outlet />
+        <Footer />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    // </ApolloProvider>
+  );
 }
 
 export default App

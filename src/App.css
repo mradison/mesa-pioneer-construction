@@ -1,0 +1,45 @@
+.headerName {
+    color: white;
+}
+
+.flex-container {
+    display: block;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 6em;
+    padding: 1em;
+    will-change: filter;
+    transition: filter 300ms;
+    margin-bottom: 15px;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .flex-item {
+    margin-left: 10px;
+  
+  }
+
+  .frontPics {
+    height: 200px;
+    width: 300px;
+    border-radius: 7em;
+    box-shadow:  
+    7px 7px 10px #595ec1,
+    -1px -1px 10px #212346;
+  }
