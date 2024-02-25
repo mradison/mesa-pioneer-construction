@@ -15,17 +15,17 @@ const Navbar = () => {
                     {/* {Auth.loggedIn() ? ( */}
                         <>
                             <div className="pageBtn">
-                                <Link className="btn btn-lg btn-primary m-2" to="/Contacts">
+                                <Link className="btn btn-lg btn-primary m-2" to="/">
                                     <button>
                                         Home
                                     </button>
                                 </Link>                  
-                                <Link className="btn btn-lg btn-primary m-2" to="/Groups">
+                                <Link className="btn btn-lg btn-primary m-2" to="/services">
                                     <button>
                                         Services
                                     </button>
                                 </Link>    
-                                <Link className="btn btn-lg btn-primary m-2" to="/Activities">
+                                <Link className="btn btn-lg btn-primary m-2" to="/portfolio">
                                     <button>
                                         Portfolio
                                     </button>

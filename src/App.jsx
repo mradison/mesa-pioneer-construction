@@ -43,12 +43,14 @@ import Footer from "./components/Footer";
 function App() {
   return (
     // <ApolloProvider client={client}>
-      <div className="App">
-        <Header />
-        <Navbar />
-          <Outlet />
-        <Footer />
+    <div className="App">
+      <Header />
+      <Navbar />
+      <div style={{ flex: 1, overflowY: 'auto', padding: 20 }}>
+        <Outlet />
       </div>
+      <Footer />
+    </div>
     // </ApolloProvider>
   );
 }

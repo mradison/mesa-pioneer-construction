@@ -1,8 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
 }
 
 header {
@@ -31,4 +33,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  position: fixed;
+  height: 150px; /* Set the height of the footer */
 }
