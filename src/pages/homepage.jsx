@@ -1,29 +1,49 @@
 import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
+import OldroomJPG from "../assets/oldroom.jpg";
+import HalfwayroomJPG from "../assets/halfway.jpg";
+import NewroomJPG from "../assets/newroom.jpg";
 
 function Homepage({ TasksValue }) {
   return (
     <main className="main">
-      <section className="welcome">
+      <div className="welcome">
         <h1>Welcome to Mesa Pioneer Construction</h1>
-
-      </section>
+      </div>
 
       <div className="friend">
         <h2>Your Friend in the Constuction Business</h2>
-        </div>
+      </div>
 
       <section className="ourServices">
-        <h2>Our Services</h2>
+        <h2 style={{ textDecoration: "underline" }}>Our Services</h2>
         <ul>
           <li>Residential Construction</li>
           <li>Renovation and Remodeling</li>
         </ul>
       </section>
 
-      <section id="portfolio">
-            <h2>Portfolio</h2>
-        </section>
+      <section className="portfolio">
+        <h2 style={{ textDecoration: "underline" }}>Portfolio</h2>
+        <div className="imageContainer">
+        <p className="LCText">Before Picture</p>
+          <div className="imageItem">
+            <img className="frontPics" src={OldroomJPG} alt="Before Picture" />
+          </div>
+          <p className="LCText">Halfway Picture</p>
+          <div className="imageItem">
+            <img
+              className="frontPics"
+              src={HalfwayroomJPG}
+              alt="Halfway Picture"
+            />
+          </div>
+          <p className="LCText">After Picture</p>
+          <div className="imageItem">
+            <img className="frontPics" src={NewroomJPG} alt="After Picture" />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
