@@ -6,7 +6,7 @@ function Portfoliopage({ TasksValue }) {
   return (
     <main className="main">
       <section className="portfolio">
-        <h2 style={{ textDecoration: "underline" }}>Portfolio</h2>
+        <h1 style={{ textDecoration: "underline" }}>Portfolio</h1>
         <div className="imageContainer">
         <p className="LCText">Before</p>
           <div className="imageItem">

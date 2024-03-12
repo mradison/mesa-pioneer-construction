@@ -23,10 +23,15 @@
     font-size: medium;
   }
 
-  .welcome, .friend {
-    font-size: small;
-    text-wrap: wrap;
+  .welcome {
+    word-wrap: wrap;
     margin: 10px;
+    font-weight: bold; 
+  }
+   .friend {
+    word-wrap: wrap;
+    margin: 10px;
+    font-style: italic;
   }
 
   .tradeMark {
@@ -34,39 +39,85 @@
     width: 150px;
   }
 
-  .imageItem {
-    width: 33.33%; /* Set each container to occupy one-third of the width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    padding: 10px; /* Add padding around each container */
-    text-align: center; /* Center the content horizontally within the container */
-  }
-  
-  .frontPics {
-    height: 300px; /* Set a fixed height for all images */
-    width: 100%; /* Ensure images take up full width of their container */
-    object-fit: cover; /* Maintain aspect ratio and fill the container */
-    border-radius: 1em; /* Optional: Add rounded corners */
-  }
+.frontPics {
+  width: 100%; /* Ensure images take up full width of their container */
+  height: auto; /* Let the height adjust proportionally based on the width */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  max-width: 100%; /* Limit the maximum width of the images */
+}
+}
 
-  .LCText {
-    margin-left: 0;
-    font-size: medium;
-  }
+.frontPics {
+  border-radius: 1em; /* Optional: Add rounded corners */
+}
+
+.LCText {
+  margin-left: 0;
+  font-size: medium;
+  font-weight: bold; 
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imageItem {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
 }
 
 .footer-links{
   display: flex;
   justify-content: space-around; /* Adjust spacing between items */
-}
-
-.footer-links{
-  margin: 15px 10px; /* Add margin to create space between items */
+  margin: 15px 10px;
 }
 
 .social-logos{
   display: flex;
   justify-content:space-around;
   height: 15px;
-  margin: 25px;
+  margin: 5px;
   padding-bottom: 30px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

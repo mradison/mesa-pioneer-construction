@@ -3,7 +3,7 @@ function Servicespage({ TasksValue }) {
       <main className="main">
 
 <section id="services">
-<h2 className="services">Our Services</h2>
+<h1 style={{ textDecoration: "underline" }}>Our Services</h1>
 <div className="residential">
     <h3>Residential Construction</h3>
     <p>We specialize in building high-quality homes tailored to your needs. From design to construction, we ensure a smooth process and exceptional results.</p>

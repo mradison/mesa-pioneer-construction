@@ -1,12 +1,12 @@
 // ContactPage.js
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -21,14 +21,14 @@ const ContactPage = () => {
     // Add logic here to handle form submission (e.g., send data to server or API)
 
     // For this example, we'll log the form data to the console
-    console.log('Form Data:', formData);
+    console.log("Form Data:", formData);
 
     // You can add additional logic to send data to a server or perform other actions
   };
 
   return (
     <div>
-      <h1>Contact Us</h1>
+      <h1 style={{ textDecoration: "underline" }}>Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Name:

@@ -8,11 +8,11 @@ function Homepage({ TasksValue }) {
   return (
     <main className="main">
       <div className="welcome">
-        <h1>Welcome to Mesa Pioneer Construction</h1>
+      <h1 style={{ textDecoration: "underline" }}>Welcome to Mesa Pioneer Construction</h1>
       </div>
 
       <div className="friend">
-        <h2>Your Friend in the Constuction Business</h2>
+        <h3>Your Friend in the Constuction Business</h3>
       </div>
 
       <section className="ourServices">
