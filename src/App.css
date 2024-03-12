@@ -4,14 +4,6 @@
     margin: 0 auto;
   }
 
-  .logo {
-    height: 4em;
-  }
-
-  .footer-links {
-    flex-direction: column;
-  }
-
   .flex-item {
     margin-left: 0;
   }
@@ -60,4 +52,21 @@
     margin-left: 0;
     font-size: medium;
   }
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-around; /* Adjust spacing between items */
+}
+
+.footer-links{
+  margin: 15px 10px; /* Add margin to create space between items */
+}
+
+.social-logos{
+  display: flex;
+  justify-content:space-around;
+  height: 15px;
+  margin: 25px;
+  padding-bottom: 30px;
 }

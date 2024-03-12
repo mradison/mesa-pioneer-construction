@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const logout = (event) => {
         event.preventDefault();
-        Auth.logout();
+        // Auth.logout();
     };
 
     return(
@@ -29,10 +29,12 @@ const Navbar = () => {
                                     <button>
                                         Portfolio
                                     </button>
-                                </Link>
-                                    <button className="btn btn-lg btn-light m-2" onClick={logout}>
+                                </Link >
+                                <Link className="btn btn-lg btn-primary m-2" to="/contact">
+                                    <button>
                                         Contact
                                     </button>
+                                </Link>
                                     {/* <InstallButton /> */}
                             </div>
                         </>

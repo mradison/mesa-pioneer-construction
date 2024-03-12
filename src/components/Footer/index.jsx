@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import FacebookSVG from "../../assets/Facebook.svg";
 import InstagramSVG from "../../assets/Instagram.svg";
 import LinkedInSVG from "../../assets/LinkedIn.svg";
@@ -36,11 +37,11 @@ const Footer = () => {
           <span className="logo">
             <a href="https://youtube.com/" target="_blank">{<img src={youtubeSVG} alt="" />}</a>
           </span>
+        </div>
         <div className="footer-links">
           <div className="flex-item"><span>Contact Us</span></div>
           <div className="flex-item"><span>Careers</span></div>
           <div className="flex-item"><span>Disclosures</span></div>
-        </div>
         </div>
           <div>
         <h4 className="copyright">&copy; {new Date().getFullYear()} - Mesa Pioneer Construction</h4>

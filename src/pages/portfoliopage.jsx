@@ -1,28 +1,10 @@
-import { useQuery } from "@apollo/client";
-import { Link } from "react-router-dom";
 import OldroomJPG from "../assets/oldroom.jpg";
 import HalfwayroomJPG from "../assets/halfway.jpg";
 import NewroomJPG from "../assets/newroom.jpg";
 
-function Homepage({ TasksValue }) {
+function Portfoliopage({ TasksValue }) {
   return (
     <main className="main">
-      <div className="welcome">
-        <h1>Welcome to Mesa Pioneer Construction</h1>
-      </div>
-
-      <div className="friend">
-        <h2>Your Friend in the Constuction Business</h2>
-      </div>
-
-      <section className="ourServices">
-        <h2 style={{ textDecoration: "underline" }}>Our Services</h2>
-        <ul>
-          <li>Residential Construction</li>
-          <li>Renovation and Remodeling</li>
-        </ul>
-      </section>
-
       <section className="portfolio">
         <h2 style={{ textDecoration: "underline" }}>Portfolio</h2>
         <div className="imageContainer">
@@ -47,4 +29,4 @@ function Homepage({ TasksValue }) {
     </main>
   );
 }
-export default Homepage;
+export default Portfoliopage;
