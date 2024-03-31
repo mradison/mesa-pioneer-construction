@@ -2,22 +2,19 @@
     "name": "mesa-pioneer-construction",
     "version": "1.0.0",
     "description": "",
-    "main": "server/server.js",
     "scripts": {
-        "start": "node server --ignore client",
-        "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
-        "install": "cd server && npm i && cd ../client && npm i",
-        "seed": "cd server && npm run seed",
-        "build": "cd client && react-scripts build"
+      "develop": "npm run start",
+      "install": "npm i",
+      "build": "react-scripts build"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-        "concurrently": "^5.1.0"
+      "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+      "concurrently": "^5.1.0"
     },
     "dependencies": {
-        "react-scripts": "^5.0.1"
+      "react-scripts": "^5.0.1"
     }
-}
+  }
