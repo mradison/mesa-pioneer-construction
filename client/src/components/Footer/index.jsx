@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import FacebookSVG from "../../assets/Facebook.svg";
 import InstagramSVG from "../../assets/Instagram.svg";
 import LinkedInSVG from "../../assets/LinkedIn.svg";
